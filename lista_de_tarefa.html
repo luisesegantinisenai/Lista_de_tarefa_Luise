@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Agenda</title>
+</head>
+<body>
+    <h1>Minha Agenda</h1>
+
+    <script>
+        let string = ["Minha Agenda"];
+        console.log(`${string}`);
+
+        let num = ["6h - Acordar", "7h - Estudar", "10h - Café da manhã", "13h - Almoçar", "16h - Café da tarde", "18h - Tomar Banho", "20h - Jantar", "22h - Dormir"];
+        
+        console.log(`${num[0]}`);
+        console.log(`${num[1]}`);
+        console.log(`${num[2]}`);
+        console.log(`${num[3]}`);
+        console.log(`${num[4]}`);
+        console.log(`${num[5]}`);
+        console.log(`${num[6]}`);
+        console.log(`${num[7]}`);
+
+        num.length
+        console.log(`Você tem ${num.length} tarefas pendentes`);
+
+        num.push("Urgente: 17h - Ir ao Dentista");
+        console.log(num);
+
+        num.sort();
+        console.log(`Agenda em ordem crescente ${num}`);
+
+        num.shift();
+        console.log(`Você concluiu a tarefa: ${num[0]}`);
+
+        num.pop();
+        console.log(`Você desistiu da tarefa: ${num[6]}`);
+
+        quantidade = num.length/2
+        num.splice(quantidade, 1);
+        console.log(`Foi retirado a tarefa do meio: ${num}`);
+    </script>
+</body>
+</html>
